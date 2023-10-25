@@ -7,8 +7,8 @@ cap = cv2.VideoCapture("C:/Users/HP/PycharmProjects/posemodule/sample.mp4")
 cap.set(3, 1280)
 cap.set(4, 720)
 
-model = YOLO("../Yolo weights/yolov8l.pt")
-model2 = YOLO("../Yolo weights/yolov8n-seg.pt")
+model = YOLO("yolov8l.pt")
+model2 = YOLO("yolov8n-seg.pt")
 names = model.names
 while True:
     success, img = cap.read()
